@@ -1,12 +1,45 @@
-# React + Vite
+# GraspCheck - AI-Powered Learning Companion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![LinkedIn Post](https://img.shields.io/badge/View-LinkedIn%20Post-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/feed/update/urn:li:activity:7339502942762266624/)
 
-Currently, two official plugins are available:
+## 🚀 Overview
+GraspCheck is a Chrome extension that transforms passive reading into active learning by generating tailored quizzes from web content. It helps you verify your understanding of technical articles and documentation instantly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- **One-Click Quiz Generation** - Instantly create quizzes from GeeksforGeeks, W3Schools, and GitHub study materials
+- **AI-Powered Questions** - Smart generation of relevant multiple-choice questions
+- **Real-time Feedback** - Immediate scoring and answer validation
+- **Time-based Quizzes** - Built-in timer to track your response time
+- **Clean Interface** - Simple and intuitive user interface
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Browser API**: Chrome Extension Manifest V3
+- **AI Integration**: Custom implementation for question generation
+- **Storage**: Chrome Storage API for data persistence
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation
+1. Clone this repository
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" (toggle in top-right corner)
+4. Click "Load unpacked" and select the project directory
+5. Pin the extension to your Chrome toolbar
+
+## 🎯 Supported Websites
+- GeeksforGeeks (geeksforgeeks.org)
+- W3Schools (w3schools.com)
+- GitHub repositories
+- PDF documents
+
+## 📝 How to Use
+1. Navigate to a supported website
+2. Click the GraspCheck extension icon in your browser
+3. Click the "Generate Quiz" button
+4. Answer the generated questions to test your understanding
+
+## 🔒 Permissions
+- Active Tab: To access the content of the current page
+- Storage: To save your quiz progress and settings
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
