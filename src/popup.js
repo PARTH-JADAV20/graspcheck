@@ -21,8 +21,11 @@ const resultDiv = document.getElementById('result');
 
 async function generateMCQs(text) {
   try {
-    const apiKey = 'AIzaSyD5AMvqdj0N07zBMfGx8fOQg8kGAn-lUvo';
-    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + apiKey, {
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+    if (!apiKey) {
+      throw new Error('API key not found. Please check your .env file.');
+    }
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
